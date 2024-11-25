@@ -1,0 +1,2010 @@
+[
+    {
+        "id": "dbe1154b5a6be98a",
+        "type": "tab",
+        "label": "Tado",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5a281d8867873ce6",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Snug on",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "e0059451c76e16c45c1579b28fc3bdd0"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_on",
+        "x": 1100,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "2e065542e8294638",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Snug off",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "e0059451c76e16c45c1579b28fc3bdd0"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_off",
+        "x": 1100,
+        "y": 220,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "2b8a55301539c70c",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Snug away",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "e0059451c76e16c45c1579b28fc3bdd0"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"away\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1110,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "1e130bebaa21e235",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Snug home",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "e0059451c76e16c45c1579b28fc3bdd0"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"home\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1110,
+        "y": 60,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "57865f4f713b517d",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Snug auto",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_hvac_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "e0059451c76e16c45c1579b28fc3bdd0"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"hvac_mode\":\"auto\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_hvac_mode",
+        "x": 1110,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "a2cbbc99253ab699",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "snugWindow",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.snug_window"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            }
+        ],
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "df480bcd193ecc13"
+            ]
+        ]
+    },
+    {
+        "id": "df480bcd193ecc13",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "snugWindow",
+        "func": "var snugWindow = flow.get(\"snugWindow\");\n\nif (msg.payload === 'off') {\n    flow.set(\"snugWindow\", \"closed\");\n    return msg;\n}\nelse {\n    flow.set(\"snugWindow\", \"open\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "67708e723a2fc2fd"
+            ]
+        ]
+    },
+    {
+        "id": "67708e723a2fc2fd",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "snugHVACControl",
+        "func": "var nestOccupied = flow.get(\"nestOccupied\");\nvar snugWindow = flow.get(\"snugWindow\");\n\nif (snugWindow === 'closed' && nestOccupied === 'occupied') {\n    msg.payload = \"auto\"\n        return msg;\n    }\nelse if (snugWindow !== 'closed' || nestOccupied !== 'occupied') {\n    msg.payload = \"off\"\n        return msg;\n    }\nelse {\n    msg.payload = \"error\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "54041ead22dfe1e6"
+            ]
+        ]
+    },
+    {
+        "id": "54041ead22dfe1e6",
+        "type": "switch",
+        "z": "dbe1154b5a6be98a",
+        "name": "HVACSwitch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "away",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "auto",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 910,
+        "y": 140,
+        "wires": [
+            [
+                "1e130bebaa21e235"
+            ],
+            [
+                "2b8a55301539c70c"
+            ],
+            [
+                "57865f4f713b517d"
+            ],
+            [
+                "5a281d8867873ce6"
+            ],
+            [
+                "2e065542e8294638"
+            ],
+            [
+                "2e065542e8294638"
+            ]
+        ]
+    },
+    {
+        "id": "335da4c8841d2cb9",
+        "type": "inject",
+        "z": "dbe1154b5a6be98a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "df480bcd193ecc13"
+            ]
+        ]
+    },
+    {
+        "id": "3464fc9f17d9b8c6",
+        "type": "inject",
+        "z": "dbe1154b5a6be98a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "df480bcd193ecc13"
+            ]
+        ]
+    },
+    {
+        "id": "49783807165e9efe",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeWindow",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.office_window"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "e3e16d2d5baa1aaa"
+            ]
+        ]
+    },
+    {
+        "id": "9f5174e50e9b5df8",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeAuto",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_hvac_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "93f0fa24debc7eec358b108c034ace6a"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"hvac_mode\":\"auto\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_hvac_mode",
+        "x": 1040,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "1a521e4e84284b3d",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeOff",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "93f0fa24debc7eec358b108c034ace6a"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_off",
+        "x": 1040,
+        "y": 440,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "52065a7809f8c78a",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "nestOccupied",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "input_boolean.nestoccupied"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "dca762f9d43dd1fb"
+            ]
+        ]
+    },
+    {
+        "id": "dca762f9d43dd1fb",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "nestOccupied",
+        "func": "if (msg.payload === 'on') {\n    flow.set(\"nestOccupied\", \"occupied\");\n    return msg;\n}\nelse {\n    flow.set(\"nestOccupied\", \"empty\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 60,
+        "wires": [
+            [
+                "b43a39a4a224d39b"
+            ]
+        ]
+    },
+    {
+        "id": "b43a39a4a224d39b",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "homeAway",
+        "func": "var nestOccupied = flow.get(\"nestOccupied\");\n\nif (nestOccupied === 'occupied') {\n    msg.payload = \"home\"\n        return msg;\n    }\nelse {\n    msg.payload = \"away\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "67708e723a2fc2fd",
+                "a2a1440833c64e2e",
+                "e3dc7c2e842d6d8f",
+                "54e12eb5aaa642cf",
+                "a65c518d8ddfd569",
+                "0901e8dd471ba91f",
+                "25fd38a63615bb7a",
+                "9dc60e7e79bc8fe7",
+                "fec855362538c865",
+                "54041ead22dfe1e6"
+            ]
+        ]
+    },
+    {
+        "id": "2639e370704861dd",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeOn",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "93f0fa24debc7eec358b108c034ace6a"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_on",
+        "x": 1040,
+        "y": 400,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "e3e16d2d5baa1aaa",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeWindow",
+        "func": "var officeWindow = flow.get(\"officeWindow\");\n\nif (msg.payload === 'off') {\n    flow.set(\"officeWindow\", \"closed\");\n    return msg;\n}\nelse {\n    flow.set(\"officeWindow\", \"open\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "a2a1440833c64e2e"
+            ]
+        ]
+    },
+    {
+        "id": "a2a1440833c64e2e",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeHVACControl",
+        "func": "var nestOccupied = flow.get(\"nestOccupied\");\nvar officeWindow = flow.get(\"officeWindow\");\n\nif (officeWindow === 'closed' && nestOccupied === 'occupied') {\n    msg.payload = \"auto\"\n    return msg;\n}\nelse if (officeWindow !== 'closed' || nestOccupied !== 'occupied') {\n    msg.payload = \"off\"\n    return msg;\n}\nelse {\n    msg.payload = \"error\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "54e12eb5aaa642cf"
+            ]
+        ]
+    },
+    {
+        "id": "e3dc7c2e842d6d8f",
+        "type": "switch",
+        "z": "dbe1154b5a6be98a",
+        "name": "HVACSwitch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "away",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "auto",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 850,
+        "y": 580,
+        "wires": [
+            [
+                "735a9c518d05f780"
+            ],
+            [
+                "9566f61387fa5a66"
+            ],
+            [
+                "9c5199358a65ceef"
+            ],
+            [],
+            [
+                "e213d3abd5ece49a"
+            ],
+            [
+                "e213d3abd5ece49a"
+            ]
+        ]
+    },
+    {
+        "id": "d17003c4c266e734",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "masterBedroomWindow",
+        "func": "var masterBedroomWindow = flow.get(\"masterBedroomWindow\");\n\nif (msg.payload === 'off') {\n    flow.set(\"masterBedroomWindow\", \"closed\");\n    return msg;\n}\nelse {\n    flow.set(\"masterBedroomWindow\", \"open\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 580,
+        "wires": [
+            [
+                "0901e8dd471ba91f"
+            ]
+        ]
+    },
+    {
+        "id": "0901e8dd471ba91f",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeHVACControl",
+        "func": "var nestOccupied = flow.get(\"nestOccupied\");\nvar masterBedroomWindow = flow.get(\"masterBedroomWindow\");\n\nif (masterBedroomWindow === 'closed' && nestOccupied === 'occupied') {\n    msg.payload = \"auto\"\n    return msg;\n}\nelse if (masterBedroomWindow !== 'closed' || nestOccupied !== 'occupied') {\n    msg.payload = \"off\"\n    return msg;\n}\nelse {\n    msg.payload = \"error\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 580,
+        "wires": [
+            [
+                "e3dc7c2e842d6d8f"
+            ]
+        ]
+    },
+    {
+        "id": "0ac0d04ca4fc3687",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "masterBedroomWindow",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.master_bedroom_window"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "d17003c4c266e734"
+            ]
+        ]
+    },
+    {
+        "id": "54e12eb5aaa642cf",
+        "type": "switch",
+        "z": "dbe1154b5a6be98a",
+        "name": "HVACSwitch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "away",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "auto",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 810,
+        "y": 360,
+        "wires": [
+            [
+                "9408514b7315b93f"
+            ],
+            [
+                "5358c770e6c77f75"
+            ],
+            [
+                "9f5174e50e9b5df8"
+            ],
+            [
+                "2639e370704861dd"
+            ],
+            [
+                "1a521e4e84284b3d"
+            ],
+            [
+                "1a521e4e84284b3d"
+            ]
+        ]
+    },
+    {
+        "id": "9408514b7315b93f",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeHome",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "93f0fa24debc7eec358b108c034ace6a"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"home\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1050,
+        "y": 280,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "5358c770e6c77f75",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "officeAway",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "93f0fa24debc7eec358b108c034ace6a"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"away\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1050,
+        "y": 320,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "e213d3abd5ece49a",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Off",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "6a79b1563f8c10b357863bc2776c18bd"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_off",
+        "x": 1090,
+        "y": 640,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "9c5199358a65ceef",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Auto",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_hvac_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "6a79b1563f8c10b357863bc2776c18bd"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"hvac_mode\":\"auto\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_hvac_mode",
+        "x": 1090,
+        "y": 600,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "735a9c518d05f780",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Home",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "6a79b1563f8c10b357863bc2776c18bd"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"home\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1090,
+        "y": 520,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "9566f61387fa5a66",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Away",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "6a79b1563f8c10b357863bc2776c18bd"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"away\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1090,
+        "y": 560,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "a65c518d8ddfd569",
+        "type": "switch",
+        "z": "dbe1154b5a6be98a",
+        "name": "HVACSwitch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "away",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "auto",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 890,
+        "y": 760,
+        "wires": [
+            [
+                "f4ebb367f6e88050"
+            ],
+            [
+                "e501a2a694b9c3a8"
+            ],
+            [
+                "eabd0c4505dc4d6f"
+            ],
+            [],
+            [
+                "4b2d367a11d494ac"
+            ],
+            [
+                "4b2d367a11d494ac"
+            ]
+        ]
+    },
+    {
+        "id": "23705f0df1b8f2ab",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "livingroomWindow",
+        "func": "var livingroomWindow = flow.get(\"livingroomWindow\");\n\nif (msg.payload === 'off') {\n    flow.set(\"livingroomWindow\", \"closed\");\n    return msg;\n}\nelse {\n    flow.set(\"livingroomWindow\", \"open\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 760,
+        "wires": [
+            [
+                "25fd38a63615bb7a"
+            ]
+        ]
+    },
+    {
+        "id": "25fd38a63615bb7a",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "livingroomHVACControl",
+        "func": "var nestOccupied = flow.get(\"nestOccupied\");\nvar livingroomWindow = flow.get(\"livingroomWindow\");\n\nif (livingroomWindow === 'closed' && nestOccupied === 'occupied') {\n    msg.payload = \"auto\"\n    return msg;\n}\nelse if (livingroomWindow !== 'closed' || nestOccupied !== 'occupied') {\n    msg.payload = \"off\"\n    return msg;\n}\nelse {\n    msg.payload = \"error\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 760,
+        "wires": [
+            [
+                "a65c518d8ddfd569"
+            ]
+        ]
+    },
+    {
+        "id": "45c8db8aaac40818",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "livingroomWindow",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.master_bedroom_window"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "23705f0df1b8f2ab"
+            ]
+        ]
+    },
+    {
+        "id": "4b2d367a11d494ac",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Off",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "455df72cf2765f50ee4bda8147896284"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_off",
+        "x": 1090,
+        "y": 820,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "eabd0c4505dc4d6f",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Auto",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_hvac_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "455df72cf2765f50ee4bda8147896284"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"hvac_mode\":\"auto\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_hvac_mode",
+        "x": 1090,
+        "y": 780,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "f4ebb367f6e88050",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Home",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "455df72cf2765f50ee4bda8147896284"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"home\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1090,
+        "y": 700,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "e501a2a694b9c3a8",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Away",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "455df72cf2765f50ee4bda8147896284"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"away\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1090,
+        "y": 740,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "fec855362538c865",
+        "type": "switch",
+        "z": "dbe1154b5a6be98a",
+        "name": "HVACSwitch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "away",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "auto",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 890,
+        "y": 920,
+        "wires": [
+            [
+                "53e6bf20b84b49d9"
+            ],
+            [
+                "e6cfc634aa179cfc"
+            ],
+            [
+                "383639b1b13ec553"
+            ],
+            [],
+            [
+                "405a747869d2cf09"
+            ],
+            [
+                "405a747869d2cf09"
+            ]
+        ]
+    },
+    {
+        "id": "ca676f88b8d5d002",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "kitchenWindow",
+        "func": "var kitchenWindow = flow.get(\"kitchenWindow\");\n\nif (msg.payload === 'off') {\n    flow.set(\"kitchenWindow\", \"closed\");\n    return msg;\n}\nelse {\n    flow.set(\"kitchenWindow\", \"open\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 920,
+        "wires": [
+            [
+                "9dc60e7e79bc8fe7"
+            ]
+        ]
+    },
+    {
+        "id": "9dc60e7e79bc8fe7",
+        "type": "function",
+        "z": "dbe1154b5a6be98a",
+        "name": "kitchenHVACControl",
+        "func": "var nestOccupied = flow.get(\"nestOccupied\");\nvar kitchenWindow = flow.get(\"kitchenWindow\");\n\nif (kitchenWindow === 'closed' && nestOccupied === 'occupied') {\n    msg.payload = \"auto\"\n    return msg;\n}\nelse if (kitchenWindow !== 'closed' || nestOccupied !== 'occupied') {\n    msg.payload = \"off\"\n    return msg;\n}\nelse {\n    msg.payload = \"error\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 920,
+        "wires": [
+            [
+                "fec855362538c865"
+            ]
+        ]
+    },
+    {
+        "id": "381fecf104de07bb",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "kitchenWindow",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.master_bedroom_window"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 140,
+        "y": 920,
+        "wires": [
+            [
+                "ca676f88b8d5d002"
+            ]
+        ]
+    },
+    {
+        "id": "405a747869d2cf09",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Off",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "cd0998437eac5d764ee22c42fdc780dc"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "turn_off",
+        "x": 1090,
+        "y": 980,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "383639b1b13ec553",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Auto",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_hvac_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "cd0998437eac5d764ee22c42fdc780dc"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"hvac_mode\":\"auto\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_hvac_mode",
+        "x": 1090,
+        "y": 940,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "e6cfc634aa179cfc",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Away",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "cd0998437eac5d764ee22c42fdc780dc"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"away\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1090,
+        "y": 900,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "53e6bf20b84b49d9",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "Home",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "cd0998437eac5d764ee22c42fdc780dc"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"home\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 1090,
+        "y": 860,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "80ed4133424c5e1a",
+        "type": "inject",
+        "z": "dbe1154b5a6be98a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 350,
+        "y": 20,
+        "wires": [
+            [
+                "dca762f9d43dd1fb"
+            ]
+        ]
+    },
+    {
+        "id": "dd8a88c3d2821b27",
+        "type": "inject",
+        "z": "dbe1154b5a6be98a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 170,
+        "y": 20,
+        "wires": [
+            [
+                "dca762f9d43dd1fb"
+            ]
+        ]
+    },
+    {
+        "id": "09f4721604842bc4",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "hotwaterTadoON",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "tado.set_water_heater_timer",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "4239daf2b21300bce1312a769428542c"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"time_period\":\"00:30:00\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "tado",
+        "service": "set_water_heater_timer",
+        "x": 630,
+        "y": 980,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "faa7257e2b17077b",
+        "type": "server-state-changed",
+        "z": "dbe1154b5a6be98a",
+        "name": "hotwaterBoostTado",
+        "server": "315411fb.df557e",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "timer.hotwaterboosttado"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 140.602294921875,
+        "y": 1057.5985107421875,
+        "wires": [
+            [
+                "83fb8ff420b20cf4"
+            ]
+        ]
+    },
+    {
+        "id": "e212da2e2a28b148",
+        "type": "inject",
+        "z": "dbe1154b5a6be98a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 190,
+        "y": 1100,
+        "wires": [
+            [
+                "bed935b8e72321bc"
+            ]
+        ]
+    },
+    {
+        "id": "3499df6ae99a9b2e",
+        "type": "inject",
+        "z": "dbe1154b5a6be98a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 190,
+        "y": 1020,
+        "wires": [
+            [
+                "09f4721604842bc4"
+            ]
+        ]
+    },
+    {
+        "id": "3f46a55d8bd37450",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "hotwaterTadoOff",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "water_heater.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "4239daf2b21300bce1312a769428542c"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "water_heater",
+        "service": "turn_off",
+        "x": 620,
+        "y": 1100,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "fd47af4efbcb7866",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "hotwaterTadoOn",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "water_heater.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "4239daf2b21300bce1312a769428542c"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "water_heater",
+        "service": "turn_on",
+        "x": 620,
+        "y": 1040,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "bed935b8e72321bc",
+        "type": "api-call-service",
+        "z": "dbe1154b5a6be98a",
+        "name": "hotwaterTadoOff",
+        "server": "315411fb.df557e",
+        "version": 7,
+        "debugenabled": false,
+        "action": "tado.set_water_heater_timer",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "4239daf2b21300bce1312a769428542c"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"time_period\":\"00:00:01\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "tado",
+        "service": "set_water_heater_timer",
+        "x": 620,
+        "y": 1160,
+        "wires": [
+            []
+        ],
+        "info": "action: climate.set_hvac_mode\r\nmetadata: {}\r\ndata:\r\n  hvac_mode: auto\r\ntarget:\r\n  device_id: e0059451c76e16c45c1579b28fc3bdd0"
+    },
+    {
+        "id": "83fb8ff420b20cf4",
+        "type": "switch",
+        "z": "dbe1154b5a6be98a",
+        "name": "hotwaterBoostSwitch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "active",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "active",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 360,
+        "y": 1060,
+        "wires": [
+            [
+                "09f4721604842bc4"
+            ],
+            [
+                "bed935b8e72321bc"
+            ]
+        ]
+    },
+    {
+        "id": "315411fb.df557e",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 5,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30,
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": "at: ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m",
+        "enableGlobalContextStore": true
+    }
+]
